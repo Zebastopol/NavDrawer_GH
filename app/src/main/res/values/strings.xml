@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ND_GitLocal</string>
+    <string name="Cabecera_de_usuario">Cabecera_de_usuario</string>
 </resources>
