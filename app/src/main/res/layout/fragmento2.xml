@@ -23,7 +23,7 @@
             android:background="@color/cardview_dark_background"
             android:text="Escoja el destino de la Tierra"
             android:textAlignment="center"
-            android:textColor="@color/purple_500"
+            android:textColor="#E040FB"
             android:textSize="34dp"
             android:textStyle="normal|bold" />
     </LinearLayout>

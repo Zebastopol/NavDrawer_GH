@@ -12,7 +12,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setTitle("Cartoons");
 
         //toogle = new ActionBarDrawerToggle(this, myDrawer,myToolbar,R.string.drawer_open, R.string.drawer_close);
-        toogle = setDrawerToogle();
+        toogle = setDrawerToggle();
         myDrawer.addDrawerListener(toogle);
     }
 
@@ -59,9 +58,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onPostCreate(savedInstanceState);
         toogle.syncState();
     }
-    @Override
-    private ActionBarDrawerToggle setDrawerToogle() {
-        return new ActionBarDrawerToggle(this, myDrawer, myToolbar, "Drawer Open","Drawer Close");
+    private ActionBarDrawerToggle setDrawerToggle() {
+        return new ActionBarDrawerToggle(this, myDrawer, myToolbar, R.string.drawer_open,R.string.drawer_close);
     }
 
     @Override

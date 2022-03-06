@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">ND_GitLocal</string>
-    <string name="Cabecera_de_usuario">Cabecera_de_usuario</string>
+    <string name="Cabecera_de_usuario">Cabecera de usuario</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
 </resources>
