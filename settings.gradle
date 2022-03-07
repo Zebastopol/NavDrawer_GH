@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "ND_GitLocal"
-include ':app'
+rootProject.name = "NavDrawer_GH"
+include ':myApp'

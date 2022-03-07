@@ -1,4 +1,4 @@
-package com.sebastopol.nd_gitlocal;
+package com.sebastopol.navdrawer_gh;
 
 import org.junit.Test;
 

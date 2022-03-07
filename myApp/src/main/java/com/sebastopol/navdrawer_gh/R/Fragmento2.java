@@ -1,4 +1,4 @@
-package com.sebastopol.nd_gitlocal;
+package com.sebastopol.navdrawer_gh;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
+
 
 
 public class Fragmento2 extends Fragment {

@@ -1,4 +1,4 @@
-package com.sebastopol.nd_gitlocal;
+package com.sebastopol.navdrawer_gh;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     NavigationView myNav;
     Toolbar myToolbar;
 
-    ActionBarDrawerToggle toogle;
+    ActionBarDrawerToggle toggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,20 +43,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setTitle("Cartoons");
 
         //toogle = new ActionBarDrawerToggle(this, myDrawer,myToolbar,R.string.drawer_open, R.string.drawer_close);
-        toogle = setDrawerToggle();
-        myDrawer.addDrawerListener(toogle);
+        toggle = setDrawerToggle();
+        myDrawer.addDrawerListener(toggle);
     }
 
     @Override
     public void onConfigurationChanged(@NonNull Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        toogle.onConfigurationChanged(newConfig);
+        toggle.onConfigurationChanged(newConfig);
     }
 
     @Override
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        toogle.syncState();
+        toggle.syncState();
     }
     private ActionBarDrawerToggle setDrawerToggle() {
         return new ActionBarDrawerToggle(this, myDrawer, myToolbar, R.string.drawer_open,R.string.drawer_close);
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (toogle.onOptionsItemSelected(item)){
+        if (toggle.onOptionsItemSelected(item)){
             return true;
         }
         return super.onOptionsItemSelected(item);
